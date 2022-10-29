@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Project_ex</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="home_1st_1">시스템이 비활성화 상태입니다.</string>
+    <string name="home_1st_2">시스템이 활성화 상태입니다.</string>
+    <string name="home_2nd_1">\n 퇴치기 \n 비활성화</string>
+    <string name="home_2nd_2">\n 퇴치기 \n 활성화</string>
+    <string name="home_3rd">뉴스입니다.</string>
+    <string name="chart_date">기간을 선택해주세요(7일)</string>
+    <string name="chart_open_calender">날짜선택</string>
+    <string name="chart_btn_date">일간 확인</string>
+    <string name="chart_btn_week">주간 확인</string>
+    <string name="chart_btn_month">월간 확인</string>
+    <string name="chart_btn_time">시간대로 보기</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnLook">사진\n확인</string>
+
+    <!--알림-->
+    <string name="channel_description">총 0건의 출현 알림이 있습니다.</string>
+    <string name="channel_name">새로운 출현알림!!</string>
+
+    <!--임다-->
+    <!--login / join 페이지-->
+    <string name="btnLogin">로그인</string>
+    <string name="btnJoin">회원가입</string>
+    <string name="tv_1st">안녕하세요.</string>
+    <string name="tv_2st">야! 가라고</string>
+    <string name="tv_3st">입니다.</string>
+    <string name="tv_4st">서비스 이용을 위해 로그인해주세요</string>
+    <string name="tvJoin">회원가입</string>
+    <string name="btnComp">완료</string>
+
+    <!-- setting페이지   -->
+    <string name="btnSt_user">회원정보수정</string>
+    <string name="btnSt_app">어플설정</string>
+    <string name="btnSt_usercom">고객문의</string>
+    <string name="btnSt_userof">기기전원</string>
+    <string name="btnSt_userout">로그아웃</string>
+    <string name="btnSt_UsSwitch2">기기전원</string>
+    <!--    set_fg 문의사항 내용-->
+    <string name="tvQ">1234@naver.com으로 문의 바랍니다.</string>
+    <!--set_fg 버튼-->
+    <string name="btnSt_Update">회원정보수정</string>
+    <string name="btnSt_UpdateCom">수정완료</string>
+    <string name="stFgNum">0</string>
+    <string name="btnSt_Incre">+</string>
+    <string name="btnSt_Decre">-</string>
+    <string name="btnSt_Comp1">되돌아가기</string>
+    <string name="btnSt_Comp2">되돌아가기</string>
+    <string name="btnSt_Comp3">되돌아가기</string>
+    <!--fg_st1_1-->
+    <string name="btnSt_Comp4">되돌아가기</string>
+    <!--fg_st4-->
+    <string name="btnSt_Comp5">되돌아가기</string>
+    <!--nav-->
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_like">Like</string>
+    <string name="menu_profile">Profile</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_1"
+    tools:context=".Camera.AddDeviceFragment">
+
+    <EditText
+        android:id="@+id/etInsertDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="북쪽카메라"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etInsertDeviceModel"
+        app:layout_constraintEnd_toEndOf="@+id/etInsertDeviceModel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInsertDeviceModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="SMHRD-1"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etInsertDeviceModel3"
+        app:layout_constraintEnd_toEndOf="@+id/etInsertDeviceModel3"
+        app:layout_constraintTop_toBottomOf="@+id/etInsertDeviceName" />
+
+    <EditText
+        android:id="@+id/etInsertDeviceModel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="000.000.000.000"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etMemo"
+        app:layout_constraintEnd_toEndOf="@+id/etMemo"
+        app:layout_constraintTop_toBottomOf="@+id/etInsertDeviceModel" />
+
+    <EditText
+        android:id="@+id/etMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="가장 북쪽에 있는 카메라"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/rgSelectModel"
+        app:layout_constraintEnd_toEndOf="@+id/rgSelectModel"
+        app:layout_constraintTop_toBottomOf="@+id/etInsertDeviceModel3" />
+
+    <RadioGroup
+        android:id="@+id/rgSelectModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMemo">
+
+        <RadioButton
+            android:id="@+id/rdCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="카메라" />
+
+        <RadioButton
+            android:id="@+id/rdElectricFence"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="전기울타리" />
+
+        <RadioButton
+            android:id="@+id/rdSpeaker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="음향" />
+
+        <RadioButton
+            android:id="@+id/rdEtc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="기타" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#d1e7c7"
+        android:fontFamily="@font/scdream4"
+        android:gravity="center"
+        android:text="추가하기"
+        android:textColor="#717070"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rgSelectModel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rgSelectModel"
+        app:layout_constraintTop_toBottomOf="@+id/rgSelectModel"
+        tools:targetApi="s" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="기기 명칭"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertDeviceName"
+        app:layout_constraintEnd_toStartOf="@+id/etInsertDeviceName"
+        app:layout_constraintStart_toStartOf="@+id/rgSelectModel"
+        app:layout_constraintTop_toTopOf="@+id/etInsertDeviceName"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모 델 명"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertDeviceModel"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/etInsertDeviceModel" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP주소"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etInsertDeviceModel3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/etInsertDeviceModel3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메 모"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etMemo"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toTopOf="@+id/etMemo"
+        app:layout_constraintVertical_bias="0.555" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

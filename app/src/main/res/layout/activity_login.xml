@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_1"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="365dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="13dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <EditText
+        android:id="@+id/etId1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/scdream4"
+        android:hint="아이디 입력"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#4A4949"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnLogin"
+        android:textColor="#4A4949"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/etId1"
+        app:layout_constraintTop_toBottomOf="@+id/etPw1" />
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnJoin"
+        android:textColor="#4A4949"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        app:iconPadding="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etId1"
+        app:layout_constraintTop_toBottomOf="@+id/etPw1" />
+
+    <TextView
+        android:id="@+id/tv_1st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/scdream3"
+        android:text="@string/tv_1st"
+        android:textColor="#3B522B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/tv_2st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/scdream7"
+        android:text="@string/tv_2st"
+        android:textColor="#3B522B"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_1st"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1st" />
+
+    <TextView
+        android:id="@+id/tv_3st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/scdream3"
+        android:text="@string/tv_3st"
+        android:textColor="#3B522B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_2st"
+        app:layout_constraintStart_toEndOf="@+id/tv_2st" />
+
+    <TextView
+        android:id="@+id/tv_4st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/scdream4"
+        android:text="@string/tv_4st"
+        android:textColor="#3B522B"
+        app:layout_constraintStart_toStartOf="@+id/tv_2st"
+        app:layout_constraintTop_toBottomOf="@+id/tv_2st" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/etPw1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/scdream4"
+        android:hint="비밀번호 입력"
+        android:inputType="textVisiblePassword|textPersonName"
+        android:minHeight="48dp"
+        android:password="true"
+        android:textAlignment="center"
+        android:textColor="#4A4949"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/etId1" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="ID 저장"
+        app:layout_constraintStart_toStartOf="@+id/etPw1"
+        app:layout_constraintTop_toBottomOf="@+id/etPw1" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="자동로그인"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toBottomOf="@+id/etPw1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

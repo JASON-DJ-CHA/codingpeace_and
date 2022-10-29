@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_1"
+    tools:context=".setting.SettingFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/btnSt_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#d1e7c7"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnSt_user"
+        android:textColor="#717070"
+        android:textSize="24sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:targetApi="s" />
+
+    <Button
+        android:id="@+id/btnSt_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#d1e7c7"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnSt_app"
+        android:textColor="#717070"
+        android:textSize="24sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/btnSt_user" />
+
+    <Button
+        android:id="@+id/btnSt_usercom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#d1e7c7"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnSt_usercom"
+        android:textColor="#717070"
+        android:textSize="24sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/btnSt_app" />
+
+    <Button
+        android:id="@+id/btnSt_userout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#d1e7c7"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/scdream4"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/btnSt_userout"
+        android:textColor="#717070"
+        android:textSize="24sp"
+        app:cornerRadius="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toBottomOf="@+id/btnSt_usercom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scdream7"
+        android:text="세팅"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
